@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uhK-nD-tCi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Couter View Controller-->
+        <scene sceneID="Sbt-MK-iaZ">
+            <objects>
+                <viewController id="uhK-nD-tCi" customClass="CouterViewController" customModule="MviDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IUb-4k-nX5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nlb-m1-1g8">
+                                <rect key="frame" x="137.5" y="181" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2EJ-Rt-rbz"/>
+                                    <constraint firstAttribute="width" constant="100" id="TeW-fE-h2N"/>
+                                </constraints>
+                                <state key="normal" title="increament"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mK-19-s7Q">
+                                <rect key="frame" x="182" y="120" width="11" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ph0-EX-f0e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nlb-m1-1g8" firstAttribute="centerX" secondItem="IUb-4k-nX5" secondAttribute="centerX" id="5PX-2d-Nac"/>
+                            <constraint firstItem="3mK-19-s7Q" firstAttribute="top" secondItem="Ymf-kk-tB4" secondAttribute="top" constant="100" id="JX6-hl-2Ia"/>
+                            <constraint firstItem="3mK-19-s7Q" firstAttribute="centerX" secondItem="IUb-4k-nX5" secondAttribute="centerX" id="WeE-Lj-Vrm"/>
+                            <constraint firstItem="Nlb-m1-1g8" firstAttribute="top" secondItem="3mK-19-s7Q" secondAttribute="bottom" constant="40" id="rwj-Om-sTA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ymf-kk-tB4"/>
+                    </view>
+                    <connections>
+                        <outlet property="bIncreament" destination="Nlb-m1-1g8" id="e3B-uT-lr1"/>
+                        <outlet property="lNumber" destination="3mK-19-s7Q" id="C0X-s6-7ns"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2er-qC-3Xp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10.4" y="-104.7976011994003"/>
+        </scene>
+    </scenes>
+</document>
